@@ -8,6 +8,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 20px 20px;
+  background-color: #fffbeb;
 }
 
 ul {
@@ -26,6 +27,11 @@ a {
   font-size: 20px;
   font-weight: 400;
   color: black;
+  transition: 0.3s ease;
+}
+
+a:hover {
+  color: chocolate;
 }
 
 i {
