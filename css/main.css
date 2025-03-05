@@ -9,7 +9,11 @@ header {
   justify-content: space-between;
   padding: 20px 20px;
   background-color: #f3f0e3;
-  box-shadow: 0px 5px 15px #61648a;
+  box-shadow: 0px 5px 15px #0000005c;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
 ul {
@@ -46,11 +50,30 @@ i {
 /* Hero section*/
 #hero {
   background-image: url("../img/hero-one.png");
-  height: 70vh;
-  width: 100%;
-  padding: 0 0 80px 80px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 60vh;
+  padding: 0 0 20px 80px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  color: #f3f0e3;
+}
+
+#hero button {
+  background-color: #61648a;
+  color: #f3f0e3;
+  font-size: 20px;
+  border-radius: 4px;
+  border: 2px solid #f3f0e3;
+  padding: 10px 20px 10px 20px;
+  transition: 0.3 ease;
+}
+
+#hero button:hover {
+  background-color: #f3f0e3;
+  color: #61648a;
 }
