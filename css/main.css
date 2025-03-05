@@ -46,5 +46,11 @@ i {
 /* Hero section*/
 #hero {
   background-image: url("../img/hero-one.png");
-  height: 80vh;
+  height: 70vh;
+  width: 100%;
+  padding: 0 0 80px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
