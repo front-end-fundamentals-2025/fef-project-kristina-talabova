@@ -9,6 +9,7 @@ header {
   justify-content: space-between;
   padding: 20px 20px;
   background-color: #f3f0e3;
+  box-shadow: 0px 5px 15px #61648a;
 }
 
 ul {
@@ -31,7 +32,7 @@ a {
 }
 
 a:hover {
-  color: #7b94fc;
+  color: #61648a;
 }
 
 i {
@@ -45,5 +46,6 @@ i {
 /* Hero image*/
 
 .hero {
+  background-image: url("img/hero-one.png");
   width: 100%;
 }
