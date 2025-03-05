@@ -43,22 +43,62 @@ i {
   width: 60%;
 }
 
-/* Hero image*/
+/* Hero section*/
 
+/* Global Box-Sizing */
+* {
+  box-sizing: border-box; /* Ensures padding is included in width and height */
+}
+
+/* Hero section styling */
 .hero {
   background-color: #61648a;
-  background-image: url("img/hero-one.png");
-  height: 90vh;
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; /* Adjusted padding to avoid overflow and keep balance */
   width: 100%;
-  background-size: cover;
-  background-position: top 25% right 0;
-  padding: 0 80px;
+}
+
+.hero-text {
+  color: white;
+  flex: 1; /* Ensures the text container takes up 50% of the space */
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  justify-content: center; /* Centers text vertically */
+  max-width: 50%; /* Prevents the text area from becoming too wide */
 }
+
+.hero-image {
+  flex: 1; /* Ensures the image container takes up 50% of the width */
+  height: 100%; /* Ensures the image fills the full height of the hero section */
+  overflow: hidden; /* Prevents the image from overflowing */
+}
+
+.hero-image img {
+  width: 100%; /* Ensures the image takes up the full width of the container */
+  height: 100%; /* Ensures the image takes up the full height */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
 h1 {
   font-size: 50px;
   font-weight: 600;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #f3f0e3;
+  border: none;
+  font-size: 18px;
+  color: #61648a;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #61648a;
+  color: white;
 }
