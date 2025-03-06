@@ -190,10 +190,12 @@ footer {
   flex-direction: column;
   justify-content: flex-end;
   flex: 1;
+  padding: 10px;
 }
 
 .column img {
   width: 30%;
+  padding: 10px 0 0 0px;
 }
 
 .column h3 {
