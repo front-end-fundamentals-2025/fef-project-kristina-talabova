@@ -2,7 +2,7 @@
   font-family: "Parkinsans", serif;
 }
 
-/* Navigation bar*/
+/* NAVIGATION BAR*/
 header {
   display: flex;
   align-items: center;
@@ -54,7 +54,7 @@ i {
   object-fit: contain;
 }
 
-/* Hero section*/
+/*HERO SECTION*/
 #hero {
   background-image: url("../img/hero-one.png");
   background-position: center;
@@ -96,12 +96,18 @@ i {
   padding-bottom: 20px;
 }
 
-/*Product section*/
+/*FEATURED PRODUCT SECTION*/
 #productsec {
   text-align: center;
 }
+#productsec h1 {
+  font-size: 30px;
+  font-weight: 400;
+  color: #61648a;
+  line-height: 0.8;
+}
 
-#productsec .procontent {
+.procontent {
   width: 23%;
   min-width: 250px;
   padding: 10px 12px;
@@ -113,10 +119,11 @@ i {
   transition: 0.3s ease;
 }
 
-#productsec .procontent:hover {
+.procontent:hover {
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
 }
-#productsec .procontent img {
+
+.procontent img {
   width: 100%;
   border-radius: 20px;
   object-fit: cover;
@@ -149,4 +156,11 @@ i {
 .description button:hover {
   background-color: #61648a;
   color: #f3f0e3;
+}
+
+.allproducts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
