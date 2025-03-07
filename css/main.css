@@ -261,6 +261,17 @@ footer {
     padding-bottom: 20px;
     max-width: 30vw;
   }
+  .column img {
+    width: 20vw;
+    padding: 0;
+  }
+  .column {
+    margin: 1vw;
+  }
+  .column p {
+    margin: 0.5;
+    line-height: 1.5;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -322,6 +333,8 @@ footer {
     align-items: center;
   }
   .column p {
-    line-height: 0.5;
+    line-height: 1.5;
+    align-content: center;
+    text-align: center;
   }
 }
