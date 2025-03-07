@@ -264,6 +264,21 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+  a,
+  i {
+    font-size: 3.5vw;
+  }
+  li {
+    padding: 5px 15px;
+  }
+  .logo {
+    padding-bottom: 10px;
+    width: 50vw;
+  }
+
   .products-container {
     grid-template-columns: 1fr;
     gap: 1.5rem;
@@ -284,18 +299,19 @@ footer {
     padding-bottom: 20px;
     max-width: 30vw;
   }
-  header {
+
+  footer {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  a,
-  i {
-    font-size: 3.5vw;
+
+  .column img {
+    width: 40vw;
+    padding: 0;
   }
-  li {
-    padding: 5px 15px;
-  }
-  .logo {
-    padding-bottom: 10px;
-    width: 50vw;
+  .column {
+    justify-content: center;
+    align-items: center;
   }
 }
