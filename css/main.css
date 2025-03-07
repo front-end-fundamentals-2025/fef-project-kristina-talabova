@@ -286,11 +286,16 @@ footer {
   }
   header {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
   a,
   i {
-    font-size: 12px;
+    font-size: 3.5vw;
+  }
+  li {
+    padding: 5px 15px;
+  }
+  .logo {
+    padding-bottom: 10px;
+    width: 50vw;
   }
 }
