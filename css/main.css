@@ -301,6 +301,10 @@ footer {
     margin: 10px;
   }
 
+  .products-container .product-window:nth-child(n + 5) {
+    display: none;
+  }
+
   #discount {
     font-size: 4vw;
   }
