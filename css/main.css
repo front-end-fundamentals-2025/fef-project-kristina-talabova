@@ -60,7 +60,7 @@ i {
   background-repeat: no-repeat;
   position: relative;
   height: 60vh;
-  padding: 0 0 20px 80px;
+  padding: 0 0 0% 5%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -84,12 +84,12 @@ i {
 }
 
 #hero-section h1 {
-  font-size: 35px;
+  font-size: 2vw;
   line-height: 0;
 }
 
 #hero-section p {
-  font-size: 15px;
+  font-size: 1vw;
   line-height: 0.5;
   padding-bottom: 20px;
 }
@@ -110,14 +110,13 @@ i {
 }
 
 .product-window {
-  width: 23%;
-  min-width: 250px;
+  width: 100%;
+  max-width: 300px;
   padding: 10px 12px;
   border: 1px solid #f3f0e3;
   border-radius: 25px;
   cursor: pointer;
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
-  margin: 15px;
   transition: 0.3s ease;
 }
 
@@ -164,6 +163,13 @@ i {
 .description button:hover {
   background-color: #61648a;
   color: #f3f0e3;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  margin: 10px;
 }
 
 /*DISCOUNT SECTION*/
