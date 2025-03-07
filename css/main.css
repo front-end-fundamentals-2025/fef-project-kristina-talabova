@@ -279,11 +279,6 @@ footer {
     width: 50vw;
   }
 
-  .products-container {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    margin: 10px;
-  }
   #hero-section {
     height: 50vw;
   }
@@ -300,12 +295,20 @@ footer {
     max-width: 30vw;
   }
 
+  .products-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 10px;
+  }
+
+  #discount {
+    font-size: 4vw;
+  }
   footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
   .column img {
     width: 40vw;
     padding: 0;
@@ -313,5 +316,8 @@ footer {
   .column {
     justify-content: center;
     align-items: center;
+  }
+  .column p {
+    line-height: 0.5;
   }
 }
