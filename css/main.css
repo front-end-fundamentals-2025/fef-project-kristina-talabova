@@ -2,6 +2,13 @@
   font-family: "Parkinsans", serif;
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
 /* NAVIGATION BAR*/
 header {
   display: flex;
@@ -97,6 +104,9 @@ i {
 /*FEATURED PRODUCT SECTION*/
 #product-section {
   margin-top: 20px;
+  display: grid;
+  place-items: center;
+  width: 100%;
 }
 #product-section h1 {
   font-size: 30px;
@@ -109,9 +119,16 @@ i {
   padding: 10px;
 }
 
+.products-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.5rem;
+  margin: 10px;
+}
+
 .product-window {
+  box-sizing: border-box;
   width: 100%;
-  max-width: 300px;
   padding: 10px 12px;
   border: 1px solid #f3f0e3;
   border-radius: 25px;
@@ -163,13 +180,6 @@ i {
 .description button:hover {
   background-color: #61648a;
   color: #f3f0e3;
-}
-
-.products-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 2rem;
-  margin: 10px;
 }
 
 /*DISCOUNT SECTION*/
