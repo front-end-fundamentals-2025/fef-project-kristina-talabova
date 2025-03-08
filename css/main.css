@@ -244,10 +244,37 @@ footer {
   font-weight: 300;
 }
 
+/*PRODUCT PAGES TOTES AND SHIRTS*/
+.totes-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.5rem;
+  margin: 10px;
+}
+
+.shirts-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.5rem;
+  margin: 10px;
+}
+
 /*MEDIA QUERIES*/
 
 @media screen and (max-width: 850px) {
   .products-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin: 10px;
+  }
+
+  .totes-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin: 10px;
+  }
+
+  .shirts-container {
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
     margin: 10px;
@@ -314,6 +341,18 @@ footer {
 
   .products-container .product-window:nth-child(n + 5) {
     display: none;
+  }
+
+  .totes-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 10px;
+  }
+
+  .shirts-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 10px;
   }
 
   #discount {
