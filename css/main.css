@@ -330,6 +330,22 @@ footer {
   margin: 0;
 }
 
+.right-half button {
+  background-color: #f3f0e3;
+  color: #61648a;
+  font-size: 15px;
+  border-radius: 4px;
+  border: 1px solid #f3f0e3;
+  padding: 10px 20px 10px 20px;
+  margin-top: 1rem;
+  transition: 0.3 ease;
+}
+.right-half button:hover {
+  background-color: #61648a;
+  color: #f3f0e3;
+  cursor: pointer;
+}
+
 /*MEDIA QUERIES*/
 
 @media screen and (max-width: 850px) {
