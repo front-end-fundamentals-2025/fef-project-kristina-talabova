@@ -261,6 +261,35 @@ footer {
   margin: 10px;
 }
 
+/*DETAIL PRODUCT PAGE*/
+.product-detailpage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 1rem 1rem 1rem 5rem;
+}
+
+.left-side {
+  height: 100vh;
+}
+
+.big-image {
+  aspect-ratio: 1;
+  height: 60vh;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.small-images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-image {
+  width: 20%;
+  object-fit: cover;
+}
+
 /*MEDIA QUERIES*/
 
 @media screen and (max-width: 850px) {
@@ -271,7 +300,6 @@ footer {
   .products-container {
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
-    margin: 10px;
   }
 
   .totes-container {
