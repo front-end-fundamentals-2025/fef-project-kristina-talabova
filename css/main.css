@@ -262,34 +262,40 @@ footer {
 }
 
 /*DETAIL PRODUCT PAGE*/
-.product-detailpage {
+
+#product-detailpage {
+  width: 100%;
+  justify-content: center;
+}
+
+.detail-grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 1.5rem;
-  margin: 1rem;
+  margin: 2rem;
   justify-items: start;
 }
 
 .left-half {
-  padding: 1rem;
+  padding-left: 15rem;
 }
 
 .big-image {
   width: 100%;
   object-fit: cover;
-  border-radius: 6%;
+  padding-bottom: 1rem;
 }
 
 .small-images {
   display: flex;
   justify-content: flex-start;
+  gap: 1rem;
 }
 
 .small-image {
   width: 20%;
   object-fit: cover;
   border-radius: 6%;
-  padding: 1rem;
 }
 
 /*MEDIA QUERIES*/
