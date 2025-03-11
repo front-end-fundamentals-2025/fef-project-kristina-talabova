@@ -89,6 +89,7 @@ i {
 #hero-section button:hover {
   background-color: #f3f0e3;
   color: #61648a;
+  cursor: pointer;
 }
 
 #hero-section h1 {
@@ -181,6 +182,7 @@ i {
 .description button:hover {
   background-color: #61648a;
   color: #f3f0e3;
+  cursor: pointer;
 }
 
 /*DISCOUNT SECTION*/
