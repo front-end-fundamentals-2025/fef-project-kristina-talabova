@@ -54,12 +54,12 @@ document.addEventListener("DOMContentLoaded", () => {
         <img src="${item.image}" alt="${item.name}" />
         <div class="cart-item-info">
           <h3>${item.name}</h3>
-          <h4>${item.price}€</h4>
+          <h3>${item.price}€</h3>
           <div class="cart-item-actions">
-            <button class="remove-item" data-index="${index}">Remove</button>
             <button class="decrease-quantity" data-index="${index}">-</button>
             <span class="quantity">${item.quantity}</span>
             <button class="increase-quantity" data-index="${index}">+</button>
+            <button class="remove-item" data-index="${index}">Remove</button>
           </div>
         </div>
       `;
