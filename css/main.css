@@ -371,7 +371,7 @@ footer {
 
 #cart-section h1 {
   color: #61648a;
-  font-size: 5vw;
+  font-size: 3vw;
 }
 
 #cart-items {
@@ -384,8 +384,8 @@ footer {
 }
 
 .cart-item img {
-  width: 20%;
-  height: 20%;
+  width: 15%;
+  height: 15%;
   object-fit: cover;
   margin-right: 20px;
 }
@@ -420,9 +420,13 @@ footer {
   color: #61648a;
 }
 
-.quantity {
-  font-size: 18px;
-  font-weight: bold;
+#total-price h2 {
+  display: flex;
+  justify-content: end;
+}
+
+#total-price h2 span {
+  margin-left: 1rem;
 }
 
 /*MEDIA QUERIES*/

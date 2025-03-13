@@ -47,6 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
+    // Display and order of elements of an intem in the cart - Image, Name, Price, Quantity buttons, Remove button
     cart.forEach((item, index) => {
       const itemElement = document.createElement("div");
       itemElement.classList.add("cart-item");
@@ -57,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <h3>${item.price}€</h3>
           <div class="cart-item-actions">
             <button class="decrease-quantity" data-index="${index}">-</button>
-            <span class="quantity">${item.quantity}</span>
+            <span class="quantity"><h3>${item.quantity}</h3></span>
             <button class="increase-quantity" data-index="${index}">+</button>
             <button class="remove-item" data-index="${index}">Remove</button>
           </div>
