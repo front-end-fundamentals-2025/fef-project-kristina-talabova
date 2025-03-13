@@ -354,6 +354,11 @@ footer {
 }
 
 /*CART PAGE*/
+
+#cart-section {
+  min-height: 70vh;
+}
+
 #cart-items .cart-item {
   display: flex;
   margin-bottom: 20px;
