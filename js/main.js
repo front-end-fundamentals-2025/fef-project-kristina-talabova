@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <h3>${item.price}€</h3>
           <div class="cart-item-actions">
             <button class="decrease-quantity" data-index="${index}">-</button>
-            <span class="quantity"><h3>${item.quantity}</h3></span>
+            <span class="quantity"><h4>${item.quantity}</h4></span>
             <button class="increase-quantity" data-index="${index}">+</button>
             <button class="remove-item" data-index="${index}">Remove</button>
           </div>

@@ -398,6 +398,7 @@ footer {
 
 .cart-item-info h3 {
   color: #61648a;
+  min-width: 10vw;
 }
 
 .cart-item-actions {
@@ -405,6 +406,11 @@ footer {
   align-items: center;
   gap: 2vw;
   margin-left: 2vw;
+}
+
+.cart-item-actions h4 {
+  font-size: 18px;
+  color: #61648a;
 }
 
 .cart-item-actions button {
@@ -423,6 +429,8 @@ footer {
 #total-price h2 {
   display: flex;
   justify-content: end;
+  color: #61648a;
+  margin-right: 10vw;
 }
 
 #total-price h2 span {
@@ -471,6 +479,9 @@ footer {
   .column p {
     margin: 0.5;
     line-height: 1.5;
+  }
+  #total-price h2 {
+    margin-right: 0vw;
   }
 }
 
