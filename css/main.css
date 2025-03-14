@@ -350,11 +350,34 @@ footer {
 
 #contact-page {
   width: 100%;
+  height: 70vh;
   justify-items: center;
+}
+
+#contact-page h1 {
+  padding: 2rem;
 }
 
 #contact-page form {
   margin: 1rem;
+}
+
+#contact-page textarea {
+  margin-top: 1rem;
+}
+
+#contact-page button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #f3f0e3;
+  color: #61648a;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#contact-page button:hover {
+  background-color: #61648a;
+  color: #f3f0e3;
 }
 
 /*CART PAGE*/
