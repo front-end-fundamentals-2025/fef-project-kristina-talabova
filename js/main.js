@@ -28,8 +28,8 @@ function resetActiveImg() {
 }
 
 // CART FUNCTIONALITY
-//Dynamic version of cart so that any item without creating an explicit array can load into the cart with data stored in the add-to-cart buttons
-
+//Dynamic version of cart so that any item without creating an explicit array can load into the cart with data stored in the add-to-cart buttons inspired by:https://www.youtube.com/watch?v=5j9KITMUfqg and https://www.youtube.com/watch?v=dtv1TcmTJ1I
+//sources used to learn different functionalities used here outside of course: https://docs.typo3.org/p/extcode/cart/10.0/en-us/Developer/JavaScript-Events/Index.html , https://developer.mozilla.org/en-US/docs/Web/API/Event/target ,https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute
 // Line 32 command idea taken from https://javascript.info/onload-ondomcontentloaded (defer from html file does not include images and css) inspired by this video https://www.youtube.com/watch?v=uR3r3GJvQDY
 document.addEventListener("DOMContentLoaded", () => {
   // Function to load data from local storage
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
       cartItemsContainer.appendChild(itemElement);
     });
 
-    // Add event listeners to buttons which + or - quantity in cart or remove item - click is used so that later in the remove, increase or decrease functions, the code knows to listen for this particular action
+    // Add event listeners to buttons which + or - quantity in cart or remove item - click is used so that later in the remove, increase or decrease functions, the code knows to listen for this particular action inspired by https://www.youtube.com/watch?v=dtv1TcmTJ1I
     document.querySelectorAll(".remove-item").forEach((button) => {
       button.addEventListener("click", removeItem);
     });
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
       0
     );
     document.getElementById("total-amount").textContent =
-      // toFixed used to specify that the number should have 2 decimals (this is how prices are displayed)
+      // toFixed used to specify that the number should have 2 decimals (this is how prices in € are usually displayed)
       totalAmount.toFixed(2);
   }
 
@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
   loadCart();
 });
 
-// ADD PRODUCT TO CART FUNCTIONALITY
+// ADD PRODUCT TO CART FUNCTIONALITY - sources apply from above function + https://www.youtube.com/watch?v=5j9KITMUfqg
 
 document.addEventListener("DOMContentLoaded", () => {
   // Add product to cart
