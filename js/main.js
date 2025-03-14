@@ -6,7 +6,7 @@ const imgContainer = document.querySelector(".big-image");
 window.addEventListener("DOMContentLoaded", () => {
   // Ensure there's a default image to show
   if (allHoverImages.length > 0 && imgContainer) {
-    // Set the initial image to the last image
+    // Set the initial image to the last image (no. 3)
     imgContainer.src = allHoverImages[3].src;
     allHoverImages[0].parentElement.classList.add("active");
   }
@@ -28,16 +28,18 @@ function resetActiveImg() {
 }
 
 // CART FUNCTIONALITY
+//Dynamic version of cart so that any item without creating an explicit array can load into the cart with data stored in the add-to-cart buttons
 
+// Line 32 command idea taken from https://javascript.info/onload-ondomcontentloaded (defer from html file does not include images and css) inspired by this video https://www.youtube.com/watch?v=uR3r3GJvQDY
 document.addEventListener("DOMContentLoaded", () => {
-  // Function to load cart data from localStorage
+  // Function to load data from local storage
   function loadCart() {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
     displayCart(cart);
     updateTotal(cart);
   }
 
-  // Function to display the cart items
+  // Function to show the cart items (gets the html container cart-items for this section in shopping cart)
   function displayCart(cart) {
     const cartItemsContainer = document.getElementById("cart-items");
     cartItemsContainer.innerHTML = "";
@@ -47,7 +49,8 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // Display and order of elements of an item in the cart - Image, Name, Price, Quantity buttons, Remove button
+    // Display and order of elements of an item in the cart used for dynamically inserting product details- Image, Name, Price, Quantity buttons, Remove button
+    // idea comes from here https://www.geeksforgeeks.org/how-to-use-dynamic-variable-names-in-javascript/
     cart.forEach((item, index) => {
       const itemElement = document.createElement("div");
       itemElement.classList.add("cart-item");
@@ -67,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
       cartItemsContainer.appendChild(itemElement);
     });
 
-    // Add event listeners to buttons
+    // Add event listeners to buttons which + or - quantity in cart or remove item - click is used so that later in the remove, increase or decrease functions, the code knows to listen for this particular action
     document.querySelectorAll(".remove-item").forEach((button) => {
       button.addEventListener("click", removeItem);
     });
@@ -88,6 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
       0
     );
     document.getElementById("total-amount").textContent =
+      // toFixed used to specify that the number should have 2 decimals (this is how prices are displayed)
       totalAmount.toFixed(2);
   }
 
@@ -100,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
     loadCart();
   }
 
-  // Function to decrease the quantity of an item
+  // Function to decrease the quantity of an item and it also checks if the Q is bigger than 1 to be able to remove anything at all
   function decreaseQuantity(event) {
     const index = event.target.getAttribute("data-index");
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
