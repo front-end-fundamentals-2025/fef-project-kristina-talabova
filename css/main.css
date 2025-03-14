@@ -246,6 +246,29 @@ footer {
   font-weight: 300;
 }
 
+/*ABOUT PAGE*/
+
+#about-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+  box-sizing: border-box;
+}
+#about-page h1 {
+  color: #61648a;
+}
+
+#about-page img {
+  width: 20%;
+}
+
+#about-images {
+  display: flex;
+  gap: 3rem;
+}
+
 /*PRODUCT PAGES TOTES AND SHIRTS*/
 .totes-container {
   display: grid;
