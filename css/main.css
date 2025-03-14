@@ -119,6 +119,7 @@ i {
   text-shadow: #61648a 1px 1px 20px;
   margin: 0;
   padding: 10px;
+  animation: fadenscale 3s ease-out;
 }
 
 .products-container {
@@ -598,6 +599,32 @@ footer {
 
   .products-container .product-window:nth-child(n + 5) {
     display: none;
+  }
+
+  #about-page {
+    padding: 5vw;
+  }
+
+  #about-page h1 {
+    color: #61648a;
+    text-align: center;
+  }
+
+  #about-page p {
+    text-align: center;
+    font-size: 4vw;
+  }
+
+  #about-page img {
+    width: 50vw;
+    margin: auto;
+  }
+
+  #about-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
   }
 
   .totes-container {
