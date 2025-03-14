@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // Display and order of elements of an intem in the cart - Image, Name, Price, Quantity buttons, Remove button
+    // Display and order of elements of an item in the cart - Image, Name, Price, Quantity buttons, Remove button
     cart.forEach((item, index) => {
       const itemElement = document.createElement("div");
       itemElement.classList.add("cart-item");
