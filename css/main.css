@@ -517,6 +517,15 @@ footer {
   margin-left: 1rem;
 }
 
+#cart-button {
+  font-size: 1.5vw;
+  padding: 1vw;
+  border: none;
+  background-color: #61648a;
+  color: #f3f0e3;
+  cursor: pointer;
+}
+
 /*MEDIA QUERIES*/
 
 @media screen and (max-width: 850px) {
@@ -729,6 +738,18 @@ footer {
   #total-price h2 {
     margin: 0;
     justify-content: center;
+    font-size: 5vw;
+  }
+
+  #cart-buttonplace {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vw;
+  }
+
+  #cart-button {
+    font-size: 5vw;
+    padding: 2vw;
   }
 
   .detail-grid-container {
